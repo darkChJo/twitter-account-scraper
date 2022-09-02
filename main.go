@@ -125,7 +125,7 @@ func main() {
 			//Check database to see if tweet ID exists, convert to json if not
 
 			if checkDatabase(string(tweet.ID)) {
-				log.Println("\"" + creator + "\" tweet ID \"" + tweet.ID + "\" already in database, skipping...")
+				log.Debugln("\"" + creator + "\" tweet ID \"" + tweet.ID + "\" already in database, skipping...")
 				continue
 			}
 

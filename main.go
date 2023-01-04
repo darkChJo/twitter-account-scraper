@@ -104,7 +104,7 @@ func main() {
 
 		creator := settings.Creators[i]
 
-		scraper := twitterscraper.New().WithDelay(3)
+		scraper := twitterscraper.New().WithDelay(5)
 
 		log.Println("Scraping tweets from \"" + creator + "\"...")
 
@@ -119,7 +119,9 @@ func main() {
 
 		for tweet := range scraper.WithReplies(true).GetTweets(context.Background(), creator, 3200) { //3200 is the limt of tweets in the api. Sadge.
 			if tweet.Error != nil {
-				log.Fatalln(tweet.Error)
+				log.Error(tweet.Error)
+				log.Error("Unable to acquire tweets for '%v' due to the above error.", creator)
+				continue
 			}
 
 			//Check database to see if tweet ID exists, convert to json if not

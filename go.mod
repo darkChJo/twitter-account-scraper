@@ -1,4 +1,4 @@
-module github.com/TaylorGitRep/twitter-account-scraper
+module github.com/ryebreadgit/twitter-account-scraper
 
 go 1.17
 

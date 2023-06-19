@@ -11,7 +11,7 @@ This is a Golang-based tool that can be used to scrape tweets, metadata, images,
 
 ## Installation
 To install and use the tool, follow these steps:
-1. Clone the repository: `git clone https://github.com/TaylorGitRep/twitter-account-scraper.git`
+1. Clone the repository: `git clone https://github.com/ryebreadgit/twitter-account-scraper.git`
 2. Install the required dependencies: 
     - Go to the root of the repository: `cd twitter-account-scraper`
     - Install the dependencies: `go mod download`
@@ -34,4 +34,4 @@ If you are interested in contributing to the tool, please follow these steps:
 5. Create a pull request.
 
 ## License
-This tool is licensed under the [MIT License](https://github.com/TaylorGitRep/twitter-account-scraper/LICENSE.md).
+This tool is licensed under the [MIT License](https://github.com/ryebreadgit/twitter-account-scraper/LICENSE.md).
